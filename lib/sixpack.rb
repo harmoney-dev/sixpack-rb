@@ -116,7 +116,7 @@ module Sixpack
       end
 
       http.open_timeout = 1.0
-      http.read_timeout = 1.0
+      http.read_timeout = 2.0
       query = Addressable::URI.form_encode(self.build_params(params))
 
       begin
